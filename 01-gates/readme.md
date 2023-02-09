@@ -1,4 +1,4 @@
-# Lab 1: JAN GADAS
+# Lab 1: Jan Gadas
 
 ### De Morgan's laws
 
