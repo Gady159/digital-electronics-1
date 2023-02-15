@@ -56,15 +56,15 @@
         report "Stimulus process started" severity note;
 
         -- First test case
-        s_b <= "BCD_OF_YOUR_SECOND_LAST_ID_DIGIT"; -- Such as "0101" if ID = xxxx56
-        s_a <= "BCD_OF_YOUR_LAST_ID_DIGIT";        -- Such as "0110" if ID = xxxx56
+        s_b <= "0001";
+        s_a <= "0010";
         wait for 100 ns;
         -- Expected output
-        assert ((s_B_greater_A = 'WRITE_CORRECT_VALUE_HERE') and
-                (s_B_equals_A  = 'WRITE_CORRECT_VALUE_HERE') and
-                (s_B_less_A    = 'WRITE_CORRECT_VALUE_HERE'))
+        assert ((s_B_greater_A = '0') and
+                (s_B_equals_A  = '0') and
+                (s_B_less_A    = '1'))
         -- If false, then report an error
-        report "Input combination COMPLETE_THIS_TEXT FAILED" severity error;
+        report "Input combination is invalid... FAILED" severity error;
 
         -- Report a note at the end of stimulus process
         report "Stimulus process finished" severity note;
@@ -74,4 +74,4 @@
 
 2. Link to your public EDA Playground example:
 
-   [Jan Gadas - EDA Playground](https://www.edaplayground.com/x/82Dg)
+   [Jan Gadas - EDA Playground](https://www.edaplayground.com/x/HJvf)
