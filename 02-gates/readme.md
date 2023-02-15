@@ -74,4 +74,4 @@
 
 2. Link to your public EDA Playground example:
 
-   [https://www.edaplayground.com/x/82Dg](https://www.edaplayground.com/x/82Dg)
+   [Jan Gadas - EDA Playground](https://www.edaplayground.com/x/82Dg)
