@@ -1,0 +1,3 @@
+[not(A1)*B1]+[not(A1)*not(A0)*B0]+[not(A0)*B1*B0]
+
+(A1+A0)*(A1+not(B0))*(A1*not(B1))*(not(B1)+not(B0))*(A0+not(B1))
