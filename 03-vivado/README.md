@@ -21,7 +21,14 @@ end Behavioral;
 
 2. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+    HEX Values
+
+   ![your figure](DE1_PC3_Mux_sim_1.png)
+
+   BIN Values
+
+   ![your figure](DE1_PC3_Mux_sim_2.png)
+
 
 3. Listing of pin assignments for the Nexys A7 board in `nexys-a7-50t.xdc`. **DO NOT list** the whole file, just your switch and LED settings.
 
