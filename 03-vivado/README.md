@@ -14,7 +14,7 @@ begin
         f_o <= a_i when "00",
                b_i when "01",
                c_i when "10",
-               d_i when others; -- All other combinations (Only 11 because of 2 Bit MUX sel input)
+               d_i when others; -- All other combinations (Only "11" because of 2 Bit MUX sel input)
 
 end Behavioral;
 ```
