@@ -74,3 +74,7 @@ set_property -dict { PACKAGE_PIN V12   IOSTANDARD LVCMOS33 } [get_ports { f_o[1]
 set_property -dict { PACKAGE_PIN V11   IOSTANDARD LVCMOS33 } [get_ports { f_o[2] }]; #IO_L21N_T3_DQS_A06_D22_14 Sch=led[15]
 ...
 ```
+
+4. Link to my public EDA Playground testbench:
+
+   [Jan Gadas - EDA Playground - MUX](https://www.edaplayground.com/x/dzXN)
