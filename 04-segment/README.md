@@ -2,6 +2,7 @@
 
 ### LED(7:4) indicators
 
+<br>
 
 0. [Pre-Lab] Complete the decoder truth table for **common anode** 7-segment display.
 
@@ -24,7 +25,10 @@
    | E | 1110 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
    | F | 1111 | 0 | 1 | 1 | 1 | 0 | 0 | 0 |
 
+   ![your figure](segments.png)
 
+
+<br>
 <a name="part1"></a>
 
 1. Complete the truth table for LEDs(7:4) according to comments in source code.
