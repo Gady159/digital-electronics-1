@@ -1,6 +1,3 @@
-
-
-
 ------------------------------------------------------------
 --
 -- Testbench for 7-segment display decoder.
@@ -21,30 +18,30 @@ library ieee;
 -- Entity declaration for testbench
 ------------------------------------------------------------
 
-entity tb_hex_7seg is
+entity tb_top is
 -- Entity of testbench is always empty
-end entity tb_hex_7seg;
+end entity tb_top;
 
 ------------------------------------------------------------
 -- Architecture body for testbench
 ------------------------------------------------------------
 
-architecture testbench of tb_hex_7seg is
+architecture testbench of tb_top is
 
   -- Testbench local signals
-  signal sig_blank : std_logic;
-  signal sig_hex   : std_logic_vector(3 downto 0);
-  signal sig_seg   : std_logic_vector(6 downto 0);
+  signal sig_led : std_logic_vector(7 downto 0);
+  signal sig_sw   : std_logic_vector(3 downto 0);
+  signal sig_btnc   : std_logic;
 
 begin
 
   -- Connecting testbench signals with decoder entity
   -- (Unit Under Test)
-  uut_hex_7seg : entity work.hex_7seg
+  uut_top : entity work.top
     port map (
-      blank => sig_blank,
-      hex   => sig_hex,
-      seg   => sig_seg
+      sw => sig_sw,
+      btnc => sig_btnc,
+      led => sig_led
     );
 
   --------------------------------------------------------
@@ -55,21 +52,14 @@ begin
 
     report "Stimulus process started";
 
-    sig_blank <= '0';    -- Normal operation
-    sig_hex   <= "0011"; -- Some default value
-    wait for 50 ns;
-
-    sig_blank <= '1';    -- Blank display
-    wait for 150 ns;
-    sig_blank <= '0';    -- Normal operation
-    wait for 15 ns;
+    
 
     -- Loop for all hex values
     for ii in 0 to 15 loop
 
       -- Convert ii decimal value to 4-bit wide binary
       -- s_hex <= std_logic_vector(to_unsigned(ii, s_hex'length));
-      sig_hex <= std_logic_vector(to_unsigned(ii, 4));
+      sig_sw <= std_logic_vector(to_unsigned(ii, 4));
       wait for 50 ns;
 
     end loop;
@@ -80,5 +70,3 @@ begin
   end process p_stimulus;
 
 end architecture testbench;
-
-
