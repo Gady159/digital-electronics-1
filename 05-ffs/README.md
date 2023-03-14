@@ -74,7 +74,7 @@ begin
                 sig_q <= not sig_q;
             end if;
         end if;
-    end process p_t_ff_rst;
+    end process jk_ff_rst;
 
     q     <= sig_q;
     q_bar <= not sig_q;
