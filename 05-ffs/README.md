@@ -37,7 +37,6 @@
    | ![rising](eq_uparrow.png) | 1 | 0 | 1 | Toogle |
    | ![rising](eq_uparrow.png) | 1 | 1 | 0 | Toogle |
 
-<a name="part1"></a>
 
 ## D & T Flip-flops
 
