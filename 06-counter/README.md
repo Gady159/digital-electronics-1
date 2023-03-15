@@ -24,6 +24,10 @@ The Nexys A7 board provides five push buttons for user applications.
    | 500&nbsp;ms | 50 000 000  | `x"02FA_F080"` | `b"0010_1111_1010_1111_0000_1000_0000"` |
    | 1&nbsp;sec  | 100 000 000 | `x"05F5_E100"` | `b"0101_1111_0101_1110_0001_0000_0000"` |
 
+   &nbsp;
+   ![clock period](counter_function.png)
+   &nbsp;
+
 
 
 ## Bidirectional counter

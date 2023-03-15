@@ -56,8 +56,8 @@ begin
   p_clk_enable : process (clk) is
   begin
 
-    if rising_edge(clk) then              -- Synchronous process
-      if (rst = '1') then                 -- High-active reset
+    if rising_edge(clk) then              -- celý proces se prování pouze na nástupné hran? signálu clock
+      if (rst = '1') then                 -- pokud je reset aktivní, bude sig_cnt a ca 0
         sig_cnt <= 0;                     -- Clear local counter
         ce      <= '0';                   -- Set output to low
 
