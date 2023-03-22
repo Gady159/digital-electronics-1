@@ -1,7 +1,7 @@
 
 
 
-# Lab 7: INSERT_YOUR_FIRSTNAME INSERT_YOUR_LASTNAME
+# Lab 7: Jan Gadas
 
 ## Display driver
 
